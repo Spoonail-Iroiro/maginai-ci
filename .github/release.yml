@@ -1,0 +1,8 @@
+changelog:
+  exclude:
+    labels:
+      - 🚀release
+  categories:
+    - title: Changes
+      labels:
+        - '*'
