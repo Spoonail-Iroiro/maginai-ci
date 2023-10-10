@@ -12,6 +12,7 @@
       "DOM",
       "DOM.Iterable"
     ],
+    // dummy
     // JSファイルは通常、ソースファイルとして無視されますが、
     // ここではJSファイルを読み込むようにTypeScriptに指示します
     "allowJs": true,
