@@ -1,9 +1,8 @@
 name: Push typedoc to github pages
 
 on:
-  push:
-    branches:
-      - github-actions
+  release:
+    types: [published]
 
 permissions:
   contents: write

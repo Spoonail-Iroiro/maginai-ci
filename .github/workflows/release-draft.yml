@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - master
-      - github-actions
 
 permissions:
   contents: write
@@ -27,7 +26,6 @@ jobs:
           echo "PACKAGE_VERSION="`cat temp-version` >> "$GITHUB_OUTPUT"
       # check if package version tag already exists, which means stable release already exists
       - uses: actions/github-script@v6
-        id: check-tag
         with:
           result-encoding: string
           retries: 3
@@ -58,4 +56,4 @@ jobs:
           draft: true
           target_commitish: master
           files: |
-            ./dist/save-manager-*.zip
+            ./dist/maginai-*.zip
